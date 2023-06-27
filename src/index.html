@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="/dist/output.css" />
+
+        <title>Frontend Mentor | FAQ Accordion Card</title>
+    </head>
+    <body>
+        <div
+            class="bg-gradient-to-b from-Soft-violet to-Soft-blue w-screen h-screen flex items-center justify-center font-Kumbh-Sans">
+            <div class="bg-white h-[600px] w-[330px] rounded-2xl desktop:w-[900px] desktop:h-[500px] desktop:flex">
+                <!-- Picture -->
+                <div class="relative overflow-visible h-[100px] desktop:flex-1 ">
+                    <img
+                        class="hidden desktop:block desktop:absolute desktop:top-[200px] desktop:-left-[116px] z-50"
+                        src="/images/illustration-box-desktop.svg"
+                        alt="" />
+                    <picture class="">
+                        <source
+                            media="(min-width: 1440px)"
+                            srcset="
+                                /images/illustration-woman-online-desktop.svg
+                            " />
+                        <img
+                            class="absolute -top-20 left-16 w-[198px] h-[150px] desktop:w-fit desktop:h-fit desktop:top-20 desktop:-left-16 z-10"
+                            src="/images/illustration-woman-online-mobile.svg"
+                            alt="" />
+                    </picture>
+                    <picture class="absolute top-3 left-16 desktop:-top-5 desktop:-left-28 z-0">
+                        <source
+                            media="(min-width: 1440px)"
+                            srcset="/images/bg-pattern-desktop.svg" />
+                        <img
+                            class="w-[198px] desktop:w-auto desktop:h-[500px]"
+                            src="/images/bg-pattern-mobile.svg"
+                            alt="" />
+                    </picture>
+                </div>
+                <!-- Picture end -->
+
+                <!-- Content Start -->
+                <div class="h-[calc(600px-132px)] flex flex-col desktop:flex-1">
+                    <div
+                        class="text-center font-bold text-4xl mt-8 text-Very-dark-desaturated-blue desktop:text-left desktop:ml-[24px] desktop:mt-14">
+                        <h1>FAQ</h1>
+                    </div>
+                    <div
+                        class="mx-6 mt-8 text-[12px] text-Very-dark-grayish-blue overflow-y-auto scrollbar flex-1 desktop:pr-20 ">
+                        <ul class=" space-y-2 desktop:space-y-5">
+                            <li class="border-b border-Light-grayish-blue py-2">
+                                <details class="open:font-[700] open:text-Very-dark-desaturated-blue">
+                                    <summary
+                                        class="list-none hover:font-[700] hover:text-Soft-red hover:cursor-pointer ">
+                                        <h2 class="flex justify-between">
+                                            How many team members can I invite?
+                                            <span>
+                                                <img
+                                                    class="inline-block"
+                                                    src="/images/icon-arrow-down.svg"
+                                                    alt="" />
+                                            </span>
+                                        </h2>
+                                    </summary>
+                                    <div class="text-Dark-grayish-blue font-[400]">
+                                        <p>
+                                            You can invite up to 2 additional
+                                            users on Free plan. There is no
+                                            limit on team members for the
+                                            Premium plan.
+                                        </p>
+                                    </div>
+                                </details >
+                            </li>
+                            <li class="border-b border-Light-grayish-blue py-2">
+                                <details class="open:font-[700] open:text-Very-dark-desaturated-blue">
+                                    <summary
+                                        class="list-none hover:font-[700] hover:text-Soft-red hover:cursor-pointer">
+                                        <h2 class="flex justify-between">
+                                            What is the maximum file upload size?
+                                            <span
+                                                ><img
+                                                    class="inline-block"
+                                                    src="/images/icon-arrow-down.svg"
+                                                    alt=""
+                                            /></span>
+                                        </h2>
+                                    </summary>
+                                    <div class="text-Dark-grayish-blue font-[400]">
+                                        <p>
+                                            No more than 2GB. All files in your
+                                            account must fit your allotted
+                                            storage space.
+                                        </p>
+                                    </div>
+                                </details >
+                            </li>
+                            <li class="border-b border-Light-grayish-blue py-2">
+                                <details class="open:font-[700] open:text-Very-dark-desaturated-blue">
+                                    <summary
+                                        class="list-none hover:font-[700] hover:text-Soft-red hover:cursor-pointer">
+                                        <h2 class="flex justify-between">
+                                            How do I reset my password?
+                                            <span
+                                                ><img
+                                                    class="inline-block"
+                                                    src="/images/icon-arrow-down.svg"
+                                                    alt=""
+                                            /></span>
+                                        </h2>
+                                    </summary>
+                                    <div class="text-Dark-grayish-blue font-[400]">
+                                        <p>
+                                            Click “Forgot password” from the
+                                            login page or“Change password” from
+                                            your profile page. reset link will
+                                            be emailed to you.
+                                        </p>
+                                    </div>
+                                </details>
+                            </li>
+                            <li class="border-b border-Light-grayish-blue py-2">
+                                <details class="open:font-[700] open:text-Very-dark-desaturated-blue">
+                                    <summary
+                                        class="list-none hover:font-[700] hover:text-Soft-red hover:cursor-pointer">
+                                        <h2 class="flex justify-between">
+                                            Can I cancel my subscription?
+                                            <span
+                                                ><img
+                                                    class="inline-block"
+                                                    src="/images/icon-arrow-down.svg"
+                                                    alt=""
+                                            /></span>
+                                        </h2>
+                                    </summary>
+                                    <div class="text-Dark-grayish-blue font-[400]">
+                                        <p>
+                                            Yes! Send us a message and we’ll
+                                            process your request no questions
+                                            asked.
+                                        </p>
+                                    </div>
+                                </details>
+                            </li>
+                            <li class="border-b border-Light-grayish-blue py-2">
+                                <details class="open:font-[700] open:text-Very-dark-desaturated-blue">
+                                    <summary
+                                        class="list-none hover:font-[700] hover:text-Soft-red hover:cursor-pointer">
+                                        <h2 class="flex justify-between">
+                                            Do you provide additional support?
+                                            <span
+                                                ><img
+                                                    class="inline-block"
+                                                    src="/images/icon-arrow-down.svg"
+                                                    alt=""
+                                            /></span>
+                                        </h2>
+                                    </summary>
+                                    <div class="text-Dark-grayish-blue font-[400]">
+                                        <p>
+                                            Chat and email support is available
+                                            24/7. Phone lines are open during
+                                            normal business hours.
+                                        </p>
+                                    </div>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="absolute bottom-0 w-screen text-center text-white">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="https://github.com/Lunaciaa">Hacalios</a>.
+        </div>
+    </footer>
+</html>
