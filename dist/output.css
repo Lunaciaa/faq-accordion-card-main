@@ -546,24 +546,16 @@ video {
   top: 0.75rem;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.z-50 {
-  z-index: 50;
-}
-
-.-z-10 {
-  z-index: -10;
-}
-
 .z-0 {
   z-index: 0;
 }
 
 .z-10 {
   z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mx-6 {
@@ -573,10 +565,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-\[24px\] {
-  margin-left: 24px;
 }
 
 .inline-block {
@@ -698,10 +686,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pr-20 {
-  padding-right: 5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -740,6 +724,11 @@ video {
 .text-Very-dark-grayish-blue {
   --tw-text-opacity: 1;
   color: hsl(237 12% 33% / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -794,209 +783,32 @@ video {
     position: absolute;
   }
 
-  .desktop\:inset-y-0 {
-    top: 0px;
-    bottom: 0px;
-  }
-
-  .desktop\:top-5 {
-    top: 1.25rem;
-  }
-
-  .desktop\:left-0 {
-    left: 0px;
-  }
-
-  .desktop\:-left-0 {
-    left: -0px;
-  }
-
-  .desktop\:-left-3 {
-    left: -0.75rem;
-  }
-
-  .desktop\:top-7 {
-    top: 1.75rem;
-  }
-
-  .desktop\:top-8 {
-    top: 2rem;
-  }
-
-  .desktop\:top-10 {
-    top: 2.5rem;
-  }
-
-  .desktop\:top-20 {
-    top: 5rem;
-  }
-
-  .desktop\:-left-7 {
-    left: -1.75rem;
-  }
-
-  .desktop\:-left-10 {
-    left: -2.5rem;
-  }
-
-  .desktop\:-left-20 {
-    left: -5rem;
-  }
-
-  .desktop\:-left-1 {
-    left: -0.25rem;
-  }
-
-  .desktop\:-left-14 {
-    left: -3.5rem;
-  }
-
   .desktop\:-left-16 {
     left: -4rem;
-  }
-
-  .desktop\:top-40 {
-    top: 10rem;
-  }
-
-  .desktop\:top-60 {
-    top: 15rem;
-  }
-
-  .desktop\:top-52 {
-    top: 13rem;
-  }
-
-  .desktop\:-left-2 {
-    left: -0.5rem;
   }
 
   .desktop\:-left-28 {
     left: -7rem;
   }
 
-  .desktop\:-left-\[27px\] {
-    left: -27px;
-  }
-
-  .desktop\:-left-\[27\] {
-    left: -27;
-  }
-
-  .desktop\:-left-\[120px\] {
-    left: -120px;
-  }
-
-  .desktop\:-left-\[118px\] {
-    left: -118px;
-  }
-
   .desktop\:-left-\[116px\] {
     left: -116px;
-  }
-
-  .desktop\:top-48 {
-    top: 12rem;
-  }
-
-  .desktop\:top-\[200px\] {
-    top: 200px;
-  }
-
-  .desktop\:-left-40 {
-    left: -10rem;
-  }
-
-  .desktop\:-left-5 {
-    left: -1.25rem;
-  }
-
-  .desktop\:-left-56 {
-    left: -14rem;
-  }
-
-  .desktop\:-left-52 {
-    left: -13rem;
-  }
-
-  .desktop\:-left-36 {
-    left: -9rem;
-  }
-
-  .desktop\:-left-24 {
-    left: -6rem;
-  }
-
-  .desktop\:top-0 {
-    top: 0px;
-  }
-
-  .desktop\:-top-0 {
-    top: -0px;
   }
 
   .desktop\:-top-5 {
     top: -1.25rem;
   }
 
-  .desktop\:-top-10 {
-    top: -2.5rem;
+  .desktop\:top-20 {
+    top: 5rem;
   }
 
-  .desktop\:-top-20 {
-    top: -5rem;
-  }
-
-  .desktop\:-top-16 {
-    top: -4rem;
-  }
-
-  .desktop\:bottom-32 {
-    bottom: 8rem;
-  }
-
-  .desktop\:top-auto {
-    top: auto;
-  }
-
-  .desktop\:top-1 {
-    top: 0.25rem;
-  }
-
-  .desktop\:top-14 {
-    top: 3.5rem;
-  }
-
-  .desktop\:top-2 {
-    top: 0.5rem;
-  }
-
-  .desktop\:top-24 {
-    top: 6rem;
-  }
-
-  .desktop\:top-28 {
-    top: 7rem;
-  }
-
-  .desktop\:-left-32 {
-    left: -8rem;
+  .desktop\:top-\[200px\] {
+    top: 200px;
   }
 
   .desktop\:ml-\[24px\] {
     margin-left: 24px;
-  }
-
-  .desktop\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
-  .desktop\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .desktop\:mt-1 {
-    margin-top: 0.25rem;
   }
 
   .desktop\:mt-14 {
@@ -1011,10 +823,8 @@ video {
     display: flex;
   }
 
-  @media (min-width: 1440px) {
-    .desktop\:desktop\:flex {
-      display: flex;
-    }
+  .desktop\:h-\[500px\] {
+    height: 500px;
   }
 
   .desktop\:h-fit {
@@ -1022,70 +832,17 @@ video {
     height: fit-content;
   }
 
-  .desktop\:h-\[400px\] {
-    height: 400px;
-  }
-
-  .desktop\:h-\[500px\] {
-    height: 500px;
-  }
-
-  .desktop\:h-auto {
-    height: auto;
-  }
-
-  .desktop\:h-\[\] {
-    height: ;
-  }
-
-  .desktop\:h-\[342px\] {
-    height: 342px;
-  }
-
-  .desktop\:h-full {
-    height: 100%;
-  }
-
-  .desktop\:w-\[1000\] {
-    width: 1000;
-  }
-
-  .desktop\:w-\[1000px\] {
-    width: 1000px;
-  }
-
-  .desktop\:w-\[1100px\] {
-    width: 1100px;
-  }
-
-  .desktop\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
   .desktop\:w-\[900px\] {
     width: 900px;
-  }
-
-  .desktop\:w-px {
-    width: 1px;
   }
 
   .desktop\:w-auto {
     width: auto;
   }
 
-  .desktop\:w-max {
-    width: -moz-max-content;
-    width: max-content;
-  }
-
-  .desktop\:w-\[420px\] {
-    width: 420px;
-  }
-
-  .desktop\:w-full {
-    width: 100%;
+  .desktop\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .desktop\:flex-1 {
